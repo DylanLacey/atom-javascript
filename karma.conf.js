@@ -7,7 +7,7 @@ module.exports = function(config) {
     if (!fs.existsSync('sauce.json')) {
       console.log('Create a sauce-labs.json with your credentials.');
       process.exit(1);
-    } else {
+    } else if (fs.existsSync('sauce-labs.json')) {
       process.env.SAUCE_USERNAME = require('./sauce-labs').username;
       process.env.SAUCE_ACCESS_KEY = require('./sauce-labs').accessKey;
     }
