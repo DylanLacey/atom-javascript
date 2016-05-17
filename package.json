@@ -5,7 +5,7 @@
   "main": "dist/sdk.js",
   "scripts": {
     "test": "karma start",
-    "travis": "mocha atom-sdk/test/atom.spec.js && mocha atom-sdk/test/request.spec.js && mocha atom-sdk/test/response.spec.js",
+    "travis": "",
     "coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls --verbose"
   },
   "repository": {
@@ -35,11 +35,13 @@
     "karma-coverage": "^1.0.0",
     "karma-mocha": "^1.0.1",
     "karma-mocha-reporter": "^2.0.3",
+    "karma-phantomjs-launcher": "^1.0.0",
     "karma-sauce-launcher": "^1.0.0",
     "karma-sinon-chai": "^1.2.0",
     "lolex": "^1.4.0",
     "mocha": "^2.4.5",
     "mocha-lcov-reporter": "^1.2.0",
+    "phantomjs": "^2.1.7",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
     "watchify": "^3.7.0",

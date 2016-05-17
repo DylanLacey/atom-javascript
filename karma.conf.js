@@ -3,43 +3,6 @@
 var fs = require('fs');
 
 module.exports = function(config) {
-  if (!process.env.SAUCE_USERNAME) {
-    if (!fs.existsSync('sauce.json')) {
-      console.log('Create a sauce-labs.json with your credentials.');
-      process.exit(1);
-    } else if (fs.existsSync('sauce-labs.json')) {
-      process.env.SAUCE_USERNAME = require('./sauce-labs').username;
-      process.env.SAUCE_ACCESS_KEY = require('./sauce-labs').accessKey;
-    }
-  }
-
-  var customLaunchers = {
-    sl_chrome: {
-      base: 'SauceLabs',
-      browserName: 'chrome',
-      platform: 'Windows 7',
-      version: '35'
-    },
-    sl_firefox: {
-      base: 'SauceLabs',
-      browserName: 'firefox',
-      version: '30'
-    },
-    sl_ios_safari: {
-      base: 'SauceLabs',
-      browserName: 'iphone',
-      platform: 'OS X 10.9',
-      version: '7.1'
-    },
-    sl_ie_11: {
-      base: 'SauceLabs',
-      browserName: 'internet explorer',
-      platform: 'Windows 8.1',
-      version: '11'
-    }
-  };
-
-
   config.set({
     basePath: '',
     frameworks: ['mocha',  'browserify', 'sinon-chai'],
@@ -86,10 +49,7 @@ module.exports = function(config) {
       testName: 'IronSource Atom js',
       startConnect: false
     },
-    browserNoActivityTimeout: 60000,
-    captureTimeout: 120000,
-    customLaunchers: customLaunchers,
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
     singleRun: true
   })
 };
