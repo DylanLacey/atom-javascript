@@ -4,6 +4,15 @@ script:
 node_js:
   - '4.4.4'
 before_install:
-  - npm i
+  - npm i && npm i -g phantomjs
+env:
+  matrix:
+    - BROWSER=chrome
+    - BROWSER=firefox
+    - BROWSER=safari
+    - BROWSER=ie:11
+    - BROWSER=ie:10
+    - BROWSER=ie:9
+    - BROWSER=ie:8
 after_script:
   - npm run coverage
