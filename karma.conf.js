@@ -89,7 +89,7 @@ module.exports = function(config) {
     browserNoActivityTimeout: 60000,
     captureTimeout: 120000,
     customLaunchers: customLaunchers,
-    browsers: ['Chrome', 'PhantomJS'],
+    browsers: ['Chrome'],
     singleRun: true
   })
 };
