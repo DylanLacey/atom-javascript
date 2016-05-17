@@ -5,6 +5,7 @@
   "main": "dist/sdk.js",
   "scripts": {
     "test": "karma start",
+    "travis": "mocha atom-sdk/test/atom.spec.js && mocha atom-sdk/test/request.spec.js && mocha atom-sdk/test/response.spec.js",
     "coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls --verbose"
   },
   "repository": {
