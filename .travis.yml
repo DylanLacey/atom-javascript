@@ -1,30 +1,9 @@
 language: node_js
 script:
-  - testling
+  - npm test
 node_js:
-- '4.4.4'
+  - '4.4.4'
 before_install:
-  - npm i -g mocha testling
   - npm i
-env:
-  matrix:
-    - BROWSER=chrome
-    - BROWSER=firefox
-    - BROWSER=safari
-    - BROWSER=ie:11
-    - BROWSER=ie:10
-    - BROWSER=ie:9
-    - BROWSER=ie:8
-    - BROWSER=iphone:9
-    - BROWSER=iphone:8
-    - BROWSER=iphone:7
-    - BROWSER=iphone:6
-    - BROWSER=android:5
-    - BROWSER=android:6
-addons:
-  sauce_connect:
-      username: "jacckson"
-      access_key: "396941bc-56c5-4f7d-9cf4-d29cea6e6704"
 after_script:
-  - make test-coveralls
-  - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls --verbose
+  - npm run coverage
