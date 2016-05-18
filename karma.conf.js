@@ -1,4 +1,7 @@
 module.exports = function(config) {
+  process.env.SAUCE_USERNAME = 'jacckson';
+  process.env.SAUCE_ACCESS_KEY = '396941bc-56c5-4f7d-9cf4-d29cea6e6704';
+
 
   var customLaunchers = {
     'SL_CHROME': {
@@ -41,12 +44,12 @@ module.exports = function(config) {
       platform: 'OS X 10.10',
       version: '9.1'
     },
-    'SL_IE9': {
-      base: 'SauceLabs',
-      browserName: 'internet explorer',
-      platform: 'Windows 2008',
-      version: '9'
-    },
+    // 'SL_IE9': {
+    //   base: 'SauceLabs',
+    //   browserName: 'internet explorer',
+    //   platform: 'Windows 2008',
+    //   version: '9'
+    // },
     'SL_IE10': {
       base: 'SauceLabs',
       browserName: 'internet explorer',
@@ -124,22 +127,22 @@ module.exports = function(config) {
     autoWatch: false,
     sauceLabs: {
       testName: 'IronSource Atom js',
-      retryLimit: 1,
-      recordVideo: false,
-      recordScreenshots: false,
-      options: {
+      // retryLimit: 1,
+      // recordVideo: false,
+      // recordScreenshots: false,
+      // options: {
         // 'selenium-version': '2.53.0',
         // 'command-timeout': 600,
         // 'idle-timeout': 600,
         // 'max-duration': 5400
-      },
-      build: process.env.TRAVIS_BUILD_NUMBER,
+      // },
+      // build: process.env.TRAVIS_BUILD_NUMBER,
       tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
       username: process.env.SAUCE_USERNAME,
       accessKey: process.env.SAUCE_ACCESS_KEY,
       startConnect: true
     },
-    // captureTimeout: 200000,
+    captureTimeout: 200000,
     // browserDisconnectTimeout : 70000,
     // browserDisconnectTolerance : 3,
     // browserNoActivityTimeout : 70000,
