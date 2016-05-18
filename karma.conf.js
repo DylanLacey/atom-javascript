@@ -1,5 +1,5 @@
 module.exports = function(config) {
-  
+
   var customLaunchers = {
     'SL_CHROME': {
       base: 'SauceLabs',
@@ -17,30 +17,30 @@ module.exports = function(config) {
       platform: 'OS X 10.9',
       version: '7'
     },
-    'SL_SAFARI8': {
-      base: 'SauceLabs',
-      browserName: 'safari',
-      platform: 'OS X 10.10',
-      version: '8'
-    },
-    'SL_SAFARI9': {
-      base: 'SauceLabs',
-      browserName: 'safari',
-      platform: 'OS X 10.11',
-      version: '9.0'
-    },
+    // 'SL_SAFARI8': {
+    //   base: 'SauceLabs',
+    //   browserName: 'safari',
+    //   platform: 'OS X 10.10',
+    //   version: '8'
+    // },
+    // 'SL_SAFARI9': {
+    //   base: 'SauceLabs',
+    //   browserName: 'safari',
+    //   platform: 'OS X 10.11',
+    //   version: '9.0'
+    // },
     'SL_IOS8': {
       base: 'SauceLabs',
       browserName: 'iphone',
       platform: 'OS X 10.10',
       version: '8.4'
     },
-    'SL_IOS9': {
-      base: 'SauceLabs',
-      browserName: 'iphone',
-      platform: 'OS X 10.10',
-      version: '9.1'
-    },
+    // 'SL_IOS9': {
+    //   base: 'SauceLabs',
+    //   browserName: 'iphone',
+    //   platform: 'OS X 10.10',
+    //   version: '9.1'
+    // },
     // 'SL_IE9': {
     //   base: 'SauceLabs',
     //   browserName: 'internet explorer',
@@ -53,30 +53,30 @@ module.exports = function(config) {
       platform: 'Windows 2012',
       version: '10'
     },
-    'SL_IE11': {
-      base: 'SauceLabs',
-      browserName: 'internet explorer',
-      platform: 'Windows 8.1',
-      version: '11'
-    },
-    'SL_EDGE': {
-      base: 'SauceLabs',
-      browserName: 'MicrosoftEdge',
-      platform: 'Windows 10',
-      version: '13.10586'
-    },
+    // 'SL_IE11': {
+    //   base: 'SauceLabs',
+    //   browserName: 'internet explorer',
+    //   platform: 'Windows 8.1',
+    //   version: '11'
+    // },
+    // 'SL_EDGE': {
+    //   base: 'SauceLabs',
+    //   browserName: 'MicrosoftEdge',
+    //   platform: 'Windows 10',
+    //   version: '13.10586'
+    // },
     'SL_ANDROID4.1': {
       base: 'SauceLabs',
       browserName: 'android',
       platform: 'Linux',
       version: '4.1'
     },
-    'SL_ANDROID5': {
-      base: 'SauceLabs',
-      browserName: 'android',
-      platform: 'Linux',
-      version: '5.1'
-    }
+    // 'SL_ANDROID5': {
+    //   base: 'SauceLabs',
+    //   browserName: 'android',
+    //   platform: 'Linux',
+    //   version: '5.1'
+    // }
   };
 
 
@@ -139,8 +139,8 @@ module.exports = function(config) {
       accessKey: process.env.SAUCE_ACCESS_KEY,
       startConnect: true
     },
-    captureTimeout: 600000,
-    browserDisconnectTimeout : 70000,
+    captureTimeout: 200000,
+    browserDisconnectTimeout : 50000,
     browserDisconnectTolerance : 3,
     browserNoActivityTimeout : 20000,
     customLaunchers: customLaunchers,
