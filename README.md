@@ -66,7 +66,7 @@ MIT
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license-url]: LICENSE
 [travis-image]: https://img.shields.io/travis/ironSource/atom-javascript.svg
-[travis-url]: https://travis-ci.org/JironSource/atom-javascript.svg?branch=master
+[travis-url]: https://travis-ci.org/IronSource/atom-javascript.svg?branch=master
 [coveralls-image]: https://coveralls.io/repos/github/ironSource/atom-javascript/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/ironSource/atom-javascript?branch=master
 [docs-image]: https://img.shields.io/badge/docs-latest-blue.svg
