@@ -1,8 +1,5 @@
 module.exports = function(config) {
-  process.env.SAUCE_USERNAME = 'jacckson';
-  process.env.SAUCE_ACCESS_KEY = '396941bc-56c5-4f7d-9cf4-d29cea6e6704';
-
-
+  
   var customLaunchers = {
     'SL_CHROME': {
       base: 'SauceLabs',
