@@ -1,5 +1,8 @@
 module.exports = function(config) {
-  
+  process.env.SAUCE_USERNAME = 'jacckson';
+  process.env.SAUCE_ACCESS_KEY = '396941bc-56c5-4f7d-9cf4-d29cea6e6704';
+
+
   var customLaunchers = {
     'SL_CHROME': {
       base: 'SauceLabs',
@@ -120,7 +123,7 @@ module.exports = function(config) {
     reporters: ['progress', 'mocha', 'coverage', 'saucelabs'],
     port: 9876,
     colors: true,
-    logLevel: 'info',
+    logLevel: 'debug',
     autoWatch: false,
     sauceLabs: {
       testName: 'IronSource Atom js',
@@ -139,10 +142,10 @@ module.exports = function(config) {
       accessKey: process.env.SAUCE_ACCESS_KEY,
       startConnect: true
     },
-    captureTimeout: 400000,
-    browserDisconnectTimeout : 90000,
+    captureTimeout: 300000,
+    browserDisconnectTimeout : 70000,
     browserDisconnectTolerance : 3,
-    browserNoActivityTimeout : 90000,
+    browserNoActivityTimeout : 70000,
     customLaunchers: customLaunchers,
     browsers: Object.keys(customLaunchers),
     singleRun: true
