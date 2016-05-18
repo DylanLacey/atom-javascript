@@ -128,10 +128,10 @@ module.exports = function(config) {
       recordVideo: false,
       recordScreenshots: false,
       options: {
-        'selenium-version': '2.53.0',
-        'command-timeout': 600,
-        'idle-timeout': 600,
-        'max-duration': 5400
+        // 'selenium-version': '2.53.0',
+        // 'command-timeout': 600,
+        // 'idle-timeout': 600,
+        // 'max-duration': 5400
       },
       build: process.env.TRAVIS_BUILD_NUMBER,
       tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
@@ -139,10 +139,10 @@ module.exports = function(config) {
       accessKey: process.env.SAUCE_ACCESS_KEY,
       startConnect: true
     },
-    captureTimeout: 200000,
-    browserDisconnectTimeout : 70000,
-    browserDisconnectTolerance : 3,
-    browserNoActivityTimeout : 70000,
+    // captureTimeout: 200000,
+    // browserDisconnectTimeout : 70000,
+    // browserDisconnectTolerance : 3,
+    // browserNoActivityTimeout : 70000,
     customLaunchers: customLaunchers,
     browsers: Object.keys(customLaunchers),
     singleRun: true
