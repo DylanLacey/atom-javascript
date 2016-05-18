@@ -11,18 +11,18 @@ module.exports = function(config) {
       browserName: 'firefox',
       version: '45'
     },
-    // 'SL_SAFARI7': {
-    //   base: 'SauceLabs',
-    //   browserName: 'safari',
-    //   platform: 'OS X 10.9',
-    //   version: '7'
-    // },
-    // 'SL_SAFARI8': {
-    //   base: 'SauceLabs',
-    //   browserName: 'safari',
-    //   platform: 'OS X 10.10',
-    //   version: '8'
-    // },
+    'SL_SAFARI7': {
+      base: 'SauceLabs',
+      browserName: 'safari',
+      platform: 'OS X 10.9',
+      version: '7'
+    },
+    'SL_SAFARI8': {
+      base: 'SauceLabs',
+      browserName: 'safari',
+      platform: 'OS X 10.10',
+      version: '8'
+    },
     // 'SL_SAFARI9': {
     //   base: 'SauceLabs',
     //   browserName: 'safari',
