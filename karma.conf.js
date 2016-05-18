@@ -139,10 +139,10 @@ module.exports = function(config) {
       accessKey: process.env.SAUCE_ACCESS_KEY,
       startConnect: true
     },
-    captureTimeout: 300000,
-    browserDisconnectTimeout : 90000,
+    captureTimeout: 200000,
+    browserDisconnectTimeout : 70000,
     browserDisconnectTolerance : 3,
-    browserNoActivityTimeout : 90000,
+    browserNoActivityTimeout : 70000,
     customLaunchers: customLaunchers,
     browsers: Object.keys(customLaunchers),
     singleRun: true
