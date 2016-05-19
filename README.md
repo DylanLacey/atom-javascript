@@ -23,7 +23,7 @@ $ bower install --save atom-sdk-js
 <script src="bower_components/atom-sdk-js/dist/sdk.min.js"></script>
 ```
 
-#### Using-the-API-layer-to-send-events
+#### Using the API layer to send events
 
 Here's an example of sending an event:
 ```js
@@ -70,5 +70,5 @@ MIT
 [coveralls-url]: https://coveralls.io/github/ironSource/atom-javascript?branch=master
 [docs-image]: https://img.shields.io/badge/docs-latest-blue.svg
 [docs-url]: https://ironsource.github.io/atom-javascript/
-[sauce-image]: https://saucelabs.com/browser-matrix/jacckson.svg?build=67
-[sauce-url]: https://saucelabs.com/u/shimont
+[sauce-image]: https://saucelabs.com/browser-matrix/jacckson.svg
+[sauce-url]: https://saucelabs.com/u/jacckson
