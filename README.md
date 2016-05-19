@@ -5,7 +5,9 @@
 [![Build status][travis-image]][travis-url]
 ## Browsers support
 [![Sauce Test Status][sauce-image]][sauce-url]
-
+<a href="https://saucelabs.com/u/jacckson">
+  <img src="https://saucelabs.com/browser-matrix/jacckson.svg" alt="Sauce Test Status"/>
+</a>
 
 atom-javascript is the official [ironSource.atom](http://www.ironsrc.com/data-flow-management) SDK for the JavaScript programming language.
 
