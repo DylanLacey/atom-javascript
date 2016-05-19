@@ -70,5 +70,5 @@ MIT
 [coveralls-url]: https://coveralls.io/github/ironSource/atom-javascript?branch=master
 [docs-image]: https://img.shields.io/badge/docs-latest-blue.svg
 [docs-url]: https://ironsource.github.io/atom-javascript/
-[sauce-image]: https://saucelabs.com/browser-matrix/jacckson.svg
+[sauce-image]: https://cloud.githubusercontent.com/assets/19283325/15394002/f94c5504-1dd8-11e6-9ee6-1d0fc94073fb.png
 [sauce-url]: https://saucelabs.com/u/jacckson
